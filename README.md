@@ -17,13 +17,14 @@ Configure basic firewall rules using UFW to block/allow traffic, understand how 
    bash
    sudo ufw enable
    
-3.Listed current rules (before configuration):
+3. Listed current rules (before configuration):
    bash
    sudo ufw status numbered
    
 4. Blocked inbound traffic on port 23 (Telnet):
    bash
    sudo ufw deny 23
+
 5. Tested the Telnet block rule using:
    bash
    telnet localhost 23
@@ -33,11 +34,11 @@ Configure basic firewall rules using UFW to block/allow traffic, understand how 
    bash
    sudo ufw allow 22
    
-8. Removed the test rule for Telnet after verification:
+7. Removed the test rule for Telnet after verification:
    bash
    sudo ufw delete deny 23
    
-10. Took screenshots of the command execution and firewall status.
+8. Took screenshots of the command execution and firewall status.
 
 ## How Firewall Filters Traffic (Summary)
    - UFW filters incoming and outgoing network traffic based on defined rules.
